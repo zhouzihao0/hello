@@ -1,0 +1,42 @@
+* @article{CUI2021,
+title = {Coupled simulation and deep-learning prediction of combustion and heat transfer processes in supercritical CO2 CFB boiler},
+journal = {Advanced Powder Technology},
+year = {2021},
+issn = {0921-8831},
+doi = {https://doi.org/10.1016/j.apt.2021.11.013},
+url = {https://www.sciencedirect.com/science/article/pii/S0921883121005367},
+author = {Ying Cui and Wenqi Zhong and Zongyan Zhou and Aibing Yu and Xuejiao Liu and Jun Xiang},
+keywords = {Circulating fluidized bed, Coupled simulation, Supercritical CO, Deep-learning prediction}
+** 问题
+1. 如何更准确地观察超临界CO2(S-CO2)循环流化床锅炉(CFB)内的传热和燃煤特性。
+2. 寻找一种能预测锅炉冷壁受热面温度分布的方法。
+** 方法
+将炉膛燃烧的三维流体力学模拟与传热管内工质传热的一维模型相结合，可以实现燃烧与传热过程的耦合。CFD方法和多项式拟合计算模型相结合，可以更准确地描述燃烧和传热过程，从而进行循环流化床锅炉的耦合仿真。耦合仿真方法可以在一定程度上实现循环流化床锅炉的燃烧优化。利用CFD数值模拟得到的数据对RBF模型进行训练，为了提高预测的准确性和数据的可靠性，RBF预测综合考虑了固定参数和变化参数，其中固定参数为受热面面积（A），变化参数为炉膛温度（Tw）、炉膛压降（P）、烟气流速（U），热通量（Q）。本研究共计算了10组CFD模拟条件。每组模拟条件包含300个热流变量，代表受热面上不同位置的一维热流分布。并分析比较两种方法下的壁面换热管的温度以及壁面温度场。
+** 结论
+对RBF预测和耦合模拟得到的螺旋壁加热器的管壁温度进行了比较，结果表明，在大多数情况下，最大偏差可以控制在8%以内，平均偏差为3.8%，结果吻合较好。将RBF神经网络预测得到的炉壁温度场与耦合仿真结果进行了比较，炉膛外环前壁温度场的预测结果与模拟值相吻合，最大偏差为5.6%，平均偏差为2.3%。外环左壁、内环前壁和内环左壁的温度场比较，预测值也与模拟值吻合较好。模拟炉壁温度与预测值之间的最大偏差和平均偏差（分别为6.2%和3.1%），进一步验证了RBF神经网络良好的预测能力。表明基于RBF神经网络对耦合模拟的预测，能得到较准确的炉壁和换热管温度分布，为大型工业超临界二氧化碳CFB锅炉的耦合仿真提供了一种更有效、更准确的方法。
+** 今天的两个问题
+ 1. 耦合的好处
+   CFD方法和多项式拟合计算模型相结合，可以更准确地描述燃烧和传热过程，得到了更精确的管外表面温度分布， 耦合仿真方法还在一定程度上实现循环流化床锅炉的燃烧优化。
+ 2. RBF的输出
+    RBF的输出是根据10组CFD模拟条件，每组模拟条件包含300个热流变量的数据训练训练出来的，是连续的多数据的输出。其中做管壁温度对比选取的每根管子21个测点只是为了对比两种方法下的拟合情况选取的观测点，做对应点的比较。
+    
+    
+* @article{0Numerical,
+  title={Numerical study of the combustion and application of SNCR for NOx reduction in a lab-scale biomass boiler - ScienceDirect},
+  author={ Mousavi, S. M.  and  Fatehi, H.  and  Bai, X. S. },
+  journal={Fuel},
+  volume={293},
+}
+** 问题
+1. 解决如何减少生物质锅炉NOx排放的问题
+2. 研究选择性非催化还原(SNCR)技术在生物质锅炉上减少氮氧化物排放的应用。
+** 方法
+以两种不同NOx生成的化学机理分别构建两种不同的机理模型，再将两种不同的还原机理结合起来，形成了一种能够模拟焦油物种详细反应的新机理。利用详细的反应机理对NOx排放进行了模拟，并对不同的NOx生成途径进行了研究。
+** 结论
+1. 焦油是生物质热解的主要产物之一，为了在模拟中考虑焦油的影响，需要一个精确的模型。
+2. 燃料中的氮以NH3和HCN的形式进入锅炉，是生物质锅炉NO 排放的主要来源。
+3. 在较高的高度低喷射氨的效果较差，如果在较低的高度喷射，可能会导致更高的NO排放。该锅炉的最佳喷氨高度为0.4m，炉膛内烟气温度在1150K   左右。
+4. 通过增加喷氨量和NSR（氮的化学计量摩尔比）值，出口处可获得较低数量的NO 。
+  
+
+
