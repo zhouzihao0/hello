@@ -1,0 +1,10 @@
+*[2021-12-09 Thu]
+** Done
+1. Read "The Promise of Artificial Intelligence in Chemical Engineering: Is It Here, Finally?".
+2. Revise the patent about combustion steady estimation.
+** Quesions
+1. Need new ideas of AI applications for power plants.
+** Plan
+1. Commit the patent about combustion steady estimation.
+2. Check combustion steady monitoring function.
+
