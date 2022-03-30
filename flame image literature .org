@@ -1,0 +1,36 @@
+* Golgiyaz S ,  Talu M F ,  Daskin M , et al. Estimation of excess air coefficient on coal combustion processes via gauss model and artificial neural network[J].  2021.
+在这项研究中，通过对CCD摄像机获得的火焰图像与过量空气系数（k）之间的关系进行建模。该模型采用三阶段方法获得：
+1. 数据收集和同步：通过安装在直径10 cm观察端口上的CCD摄像机获得火焰图像，并通过烟气分析仪协调测量和记录k。
+2. 特征提取：对火焰图像进行网格化，将其分割成小块。通过单变量和多变量高斯建模、颜色概率计算和高斯混合方法，计算了每片火焰图像的均匀性。
+3. 匹配和测试：多层人工神经网络（ANN）用于特征的匹配。
+
+
+
+
+* Zh A ,  Jian L A ,  Mmh B , et al. An ensemble deep learning model for exhaust emissions prediction of heavy oil-fired boiler combustion[J]. Fuel.
+本研究提出了一种新的集成深度学习模型用于废气排放（NOx和CO2）预测。在该集成学习模型中，建立了叠加去噪自动编码器来提取火焰图像的深层特征。基于提取的图像深度特征，采用人工神经网络、极限学习机、支持向量机和最小二乘支持向量机四种预测引擎对NOx和CO2排放进行初步预测。之后，这些初步预测通过高斯过程回归以非线性方式进行组合，以实现排放的最终预测。通过4.2MW重油锅炉火焰图像对所提出的集成深度学习模型的有效性进行了评估。实验结果表明，虽然四个预测引擎的预测结果不一致，但是所提出的模型已经达到了准确的预测精度。所提出的集成深度学习模型不仅能提供精确的点预测，而且能产生令人满意的置信区间。
+* Tang Y ,  Zhang J ,  Yue M , et al. Deep learning-based super-resolution images for synchronous measurement of temperature and deformation at elevated temperature[J]. Optik - International Journal for Light and Electron Optics, 2021.
+《基于深度学习的超分辨率图像同步测量高温下的温度和变形》
+本文将图像捕获和处理方法结合起来，以获得高分辨率图像以及相应的温度场和变形场。超分辨率重建采用超分辨率卷积神经网络（SRCNN）算法，变形场采用DIC方法计算，温度场采用改进的双色法同步获得。SiC材料的火焰加热实验验证了该方法的适用性和改进性，图像质量提高（峰值信噪比提高16.7%），温度和变形计算精度提高（误差降低3.57%）。同时指出了“特征点漂移”现象，分析了高分辨率和低分辨率变形测量的误差。
+* Grokopf J ,  Matthes J ,  Vogelbacher M , et al. Evaluation of Deep Learning-Based Segmentation Methods for Industrial Burner Flames[J]. Energies, 2021, 14.
+《基于深度学习的工业燃烧器火焰分割方法评价》
+适当的图像处理系统、受控燃烧的摄像头观察可用于闭环过程控制，从而优化和更高效地使用燃料。基于摄像头的控制系统的一个关键要素是每个燃烧器火焰的鲁棒分割。然而，工业环境中的火焰实例分割给图像处理带来了特定的问题，例如火焰重叠、对象边界模糊、遮挡和不规则的图像内容。在这项研究中，研究了一种基于垃圾焚烧厂实例图像数据的深度学习方法对工业燃烧器火焰进行实例分割的能力。并使用几个卷积神经网络评估了在具有挑战性的情况下的分割质量和鲁棒性，并证明了基于深度学习的方法能够产生令人满意的结果，例如在工业环境中的分割。
+* Zhou Y ,  Zhang C ,  Han X , et al. Monitoring combustion instabilities of stratified swirl flames by feature extractions of time-averaged flame images using deep learning method[J]. Aerospace Science and Technology, 2020, 109:106443.
+《利用深度学习方法提取平均时间火焰图像特征监测分层旋流火焰的燃烧不稳定性》
+本文研究了基于时间平均火焰图像的深度学习方法在燃烧不稳定性监测中的应用。在北航轴向旋流燃烧器（独立分层）的基础上，在广泛的操作条件下进行了实验，以涵盖各种火焰形状。文中设计了一个名为BIM（BASIS Image Monitor）的CNN（卷积神经网络），用于从火焰形状中提取特征，并提前确定火焰的热声状态。对112种工况进行了实验，并将其图像输入BIM进行训练和测试。在持续不到20分钟的短训练过程后，BIM的预测准确率达到99%左右。由BIM特征提取和可视化并通过类激活图（CAM）方法反映了火焰图像及其稳定性之间的潜在统计联系。实验在八种未知的操作条件下对BIM进行测试，BIM仍然可以表现良好，准确地识别其稳定性和不稳定特征。
+* Zl A ,  Xj B ,  Yao Y A , et al. A comprehensive investigation of LSTM-CNN deep learning model for fast detection of combustion instability[J]. Fuel, 303.
+《用于快速检测燃烧不稳定性的LSTM-CNN深度学习模型的综合研究》
+本文提出了一种利用高速火焰图像序列检测燃烧不稳定性的深度学习模型。该检测模型结合了卷积神经网络（CNN）和长短期记忆网络（LSTM）从高速图像中学习空间特征和时间相关性，然后输出燃烧不稳定性检测结果。还将提取的空间特征及其时间演化进行可视化，以解释模型的检测过程。此外，本文还讨论了CNN层的不同复杂性和不同训练数据量对模型性能的影响。提出的方法在涡流室中的各种燃烧条件下实现良好的性能，具有高精度且处理时间短，每帧约1.23毫秒。
+
+* Choi O ,  Choi J ,  Kim N , et al. Combustion Instability Monitoring through Deep-Learning-Based Classification of Sequential High-Speed Flame Images[J]. Electronics, 2020, 9(5):848.
+《基于深度学习的连续高速分类火焰图像监测燃烧不稳定性》
+本研究提出了一种基于高速火焰图像的深度学习模型来诊断燃气轮机的燃烧不稳定性。建立了两个不同的网络层，可以与任何现有主干网络相结合：（1）早期融合层，可以学习提取后续图像帧的功率谱密度，在特定条件下是时不变的。（2）后期融合层，将主干网络在不同时间步的输出结合起来，以预测当前燃烧状态。通过在燃气轮机燃烧室从稳定状态到不稳定状态过渡过程中获得的高速火焰图像数据集，验证了所提出模型的性能。所有测试例子都实现了优异的性能，准确率高达95.1–98.6%，处理时间短达5.2–12.2毫秒。
+
+* Omiotek Z ,  Kotyra A . Flame Image Processing and Classification Using a Pre-Trained VGG16 Model in Combustion Diagnosis[J]. Sensors, 2021, 21(2):500.
+本文提出了一种将火焰图像处理与深度卷积神经网络（DCNN）相结合的方法，确保了对非期望燃烧状态的高精度识别。该方法基于火焰分割过程中伽马校正系数（G）的自适应选择。它使用经验确定的G系数和R图像分量平均强度之间的关系，使用预先训练的VGG16模型进行分类。对于特定燃烧状态的检测，它具有82%到%98的准确度。
+* Qin, Li and Lu, Gang and Hossain, Md. Moinul and Morris, Andy and Yan, Yong,IEEE Transactions on Instrumentation and Measurement，A Flame Imaging-Based Online Deep Learning Model for Predicting NOₓ Emissions From an Oxy-Biomass Combustion Process
+数据驱动模型已被开发用于预测各种燃烧过程中的NOx排放，具有良好的准确性。然而，这种模型最初是基于已知的燃烧条件建立的，这些燃烧条件在历史上是“可见的”。对于“看不见”的新情况，这些模型通常表现不好。在这项研究中，基于深度学习和条件识别模型，提出了一个ODL（在线深度学习）模型，用于预测“可见”和“不可见”燃烧条件下生物质含氧燃烧过程中的NOx排放。ODL模型主要基于“看不见的”燃烧条件建立。在ODL模型中引入了一个由回归损失和蒸馏损失组成的新目标函数，以提高预测精度。ODL模型使用锅炉运行数据、火焰温度图和在一系列含氧生物质燃烧条件下在含氧燃料燃烧试验设施上获得的NOx数据进行检验。使用专用成像系统获取的火焰图像用于通过双色测温法计算火焰的温度分布。结果表明，对于第一次、第二次和第三次更新，所提出的模型能够预测“可见”和“不可见”条件下的NOx排放，平均绝对百分比误差小于3%。
+
+* Ha N Z ,  Li J ,  Zhang B , et al. Prediction of combustion state through a semi-supervised learning model and flame imaging[J]. Fuel, 2020, 289(4):119745.
+《基于半监督学习模型和火焰成像的燃烧状态预测》
+本研究提出了一种结合去噪自动编码器（DAE）、生成对抗网络（GAN）和高斯过程分类器（GPC）的半监督学习模型。DAE网络用于提取火焰图像的代表性特征，并通过GAN的对抗性学习机制训练网络。为了提高DAE网络的特征学习能力，引入了结构相似性（SSIM）度量作为一种新的损失函数。然后将提取的特征输入GPC，以预测可见和不可见的燃烧状态。通过在不同燃烧状态下拍摄的4.2 MW重油燃烧锅炉炉膛火焰图像，评估了所提出的半监督学习模型DAE-GAN-GPC的有效性。对于可见燃烧状态，平均预测精度达到99.83%。通过对GPC进行微调，在不重新训练DAE-GAN的情况下，通过提出的模型准确地预测了新的（未看到的）态，未看到的态的平均预测精度达到98.36%。还与其他深度神经网络和分类器进行了比较研究。结果表明，与其他传统预测模型相比，该模型具有更好的预测精度和鲁棒性。
