@@ -99,3 +99,15 @@ keywords = {Circulating fluidized bed, Coupled simulation, Supercritical CO, Dee
 bibliographystyle:unsrt
 bibliography:./paper.bib
 
+
+* Qin, Li and Lu, Gang and Hossain, Md. Moinul and Morris, Andy and Yan, Yong,IEEE Transactions on Instrumentation and Measurement，A Flame Imaging-Based Online Deep Learning Model for Predicting NOₓ Emissions From an Oxy-Biomass Combustion Process
+** 问题
+1. 采用数据驱动方式来解决监测系统对于NOx排放值存在显著的时间延迟和NOx控制效率低下的问题。
+2. 计算流体动力学等模型驱动的预测方法通过模拟特定燃料燃烧过程中的物理和化学反应来预测NOx的生成，这是从理论上理解燃烧现象的一个非常有用的工具，但由于复杂和所需的计算资源，不适合实时过程。
+3. 现有的一些模型在没有更新的情况下处于离线状态，因此当新条件超出训练条件时，这些模型的性能不能令人满意。
+4. 现有的一些模型依赖于使用常规仪器在锅炉周围获得的大量运行数据，其中遗漏了火焰特征信息。研究表明，火焰特性与燃烧稳定性以及NOx排放密切相关，因此将温度图等火焰数据直接应用到模型中将提高NOx预测的精度，提高模型的效率。
+基于以上问题开发了一个基于火焰成像的ODL模型，用于预测生物质氧燃烧过程中的NOx排放。
+** 方法
+在固定炉膛负荷为150kWth的条件下，用磨碎的白木粉作为生物质燃料，在不同的充氧燃烧条件下进行了10个工况的试验。对于每个测试条件，当条件稳定时，成像系统在大约四分钟内总共捕捉到150-170个火焰图像。NOx数据也同时由气体分析仪从烟道气中获取，然后将其用作构建模型的参考NOx(地面真实数据)。测试1-3、6、7、9和10的火焰和NOx排放数据用于建立源DL模型，而测试4、5和8的数据用于训练、验证和测试ODL模型。每个数据集被随机分为训练数据集(75%)、验证数据集(12.5%)和测试数据集(12.5%)。并用MAPE(平均绝对百分比误差)、σ(绝对百分比误差标准差)和APEmax(最大绝对百分比误差)来评估模型的性能。
+** 结论
+测试结果表明，所提出的ODL模型能够预测“可见”和“不可见”情况下的NOx排放，即使在三次更新后，平均绝对百分比误差也不超过3%。与传统的CNN模型相比，ODL模型具有增量学习能力，这使得所提出的ODL模型在实际燃烧系统变工况下的NOx在线预测中具有很大的潜力，提高了精度和效率。
