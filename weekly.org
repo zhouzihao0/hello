@@ -1,10 +1,10 @@
-*[2021-12-09 Thu]
+* [2022-04-20 Wed]
 ** Done
-1. Read "The Promise of Artificial Intelligence in Chemical Engineering: Is It Here, Finally?".
-2. Revise the patent about combustion steady estimation.
+学习了文献[[cite:&Zhou-et.al._2020]]
+该文章研究了基于时均火焰图像的深度学习方法在燃烧不稳定性监测中的应用。在北航轴向旋流燃烧器（独立分层）的基础上，设计了一个名为BIM（BASIS Image Monitor）的CNN（卷积神经网络），用于从火焰形状中提取特征，并提前确定火焰的热声状态。由BIM特征提取和可视化并通过类激活图（CAM）方法反映了火焰图像及其稳定性之间的潜在统计联系，并能准确地识别其稳定性和不稳定特征。
 ** Quesions
-1. Need new ideas of AI applications for power plants.
+1. 对其中实验的燃烧器形状不太清晰。
+2. 不知道其方法运用到锅炉燃煤燃烧上能不能达到良好的效果。
 ** Plan
-1. Commit the patent about combustion steady estimation.
-2. Check combustion steady monitoring function.
+继续阅读文献，并继续思考硕士课题方向。
 

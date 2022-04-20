@@ -1,12 +1,5 @@
-* @article{CUI2021,
-title = {Coupled simulation and deep-learning prediction of combustion and heat transfer processes in supercritical CO2 CFB boiler},
-journal = {Advanced Powder Technology},
-year = {2021},
-issn = {0921-8831},
-doi = {https://doi.org/10.1016/j.apt.2021.11.013},
-url = {https://www.sciencedirect.com/science/article/pii/S0921883121005367},
-author = {Ying Cui and Wenqi Zhong and Zongyan Zhou and Aibing Yu and Xuejiao Liu and Jun Xiang},
-keywords = {Circulating fluidized bed, Coupled simulation, Supercritical CO, Deep-learning prediction}
+* Coupled simulation and deep-learning prediction of combustion and heat transfer processes in supercritical CO2 CFB boiler
+[[cite:&Cui-et.al._2021]]
 ** 问题
 1. 如何更准确地观察超临界CO2(S-CO2)循环流化床锅炉(CFB)内的传热和燃煤特性。
 2. 寻找一种能预测锅炉冷壁受热面温度分布的方法。
@@ -21,12 +14,8 @@ keywords = {Circulating fluidized bed, Coupled simulation, Supercritical CO, Dee
     RBF的输出是根据10组CFD模拟条件，每组模拟条件包含300个热流变量的数据训练训练出来的，是连续的多数据的输出。其中做管壁温度对比选取的每根管子21个测点只是为了对比两种方法下的拟合情况选取的观测点，做对应点的比较。
     
     
-* @article{0Numerical,
-  title={Numerical study of the combustion and application of SNCR for NOx reduction in a lab-scale biomass boiler - ScienceDirect},
-  author={ Mousavi, S. M.  and  Fatehi, H.  and  Bai, X. S. },
-  journal={Fuel},
-  volume={293},
-}
+* Numerical study of the combustion and application of SNCR for NOx reduction in a lab-scale biomass boiler - ScienceDirect
+[[cite:&Mousavi-et.al._2021]]
 ** 问题
 1. 解决如何减少生物质锅炉NOx排放的问题
 2. 研究选择性非催化还原(SNCR)技术在生物质锅炉上减少氮氧化物排放的应用。
@@ -81,6 +70,7 @@ keywords = {Circulating fluidized bed, Coupled simulation, Supercritical CO, Dee
 
 
 *  Li N ,  Hu Y . The Deep Convolutional Neural Network for NOx Emission Prediction of a Coal-Fired Boiler[J]. IEEE Access, 2020, PP(99):1-1.
+[[cite:&Li-Hu_2020]]
 ** 问题
 提出了一种利用实际运行数据、煤质和CNN（卷积神经网络）预测燃煤锅炉NOx排放的方法。文章重点在于对构建模块按照轻量级CNN架构进行了精心设计。
 ** 方法
@@ -94,13 +84,8 @@ keywords = {Circulating fluidized bed, Coupled simulation, Supercritical CO, Dee
 
 
 
-
-** 参考文献                                                         :ignore:
-bibliographystyle:unsrt
-bibliography:./paper.bib
-
-
-* Qin, Li and Lu, Gang and Hossain, Md. Moinul and Morris, Andy and Yan, Yong,IEEE Transactions on Instrumentation and Measurement，A Flame Imaging-Based Online Deep Learning Model for Predicting NOₓ Emissions From an Oxy-Biomass Combustion Process
+* A Flame Imaging-Based Online Deep Learning Model for Predicting NOₓ Emissions From an Oxy-Biomass Combustion Process
+[[cite:&Qin-et.al._2022]]
 ** 问题
 1. 采用数据驱动方式来解决监测系统对于NOx排放值存在显著的时间延迟和NOx控制效率低下的问题。
 2. 计算流体动力学等模型驱动的预测方法通过模拟特定燃料燃烧过程中的物理和化学反应来预测NOx的生成，这是从理论上理解燃烧现象的一个非常有用的工具，但由于复杂和所需的计算资源，不适合实时过程。
@@ -111,3 +96,20 @@ bibliography:./paper.bib
 在固定炉膛负荷为150kWth的条件下，用磨碎的白木粉作为生物质燃料，在不同的充氧燃烧条件下进行了10个工况的试验。对于每个测试条件，当条件稳定时，成像系统在大约四分钟内总共捕捉到150-170个火焰图像。NOx数据也同时由气体分析仪从烟道气中获取，然后将其用作构建模型的参考NOx(地面真实数据)。测试1-3、6、7、9和10的火焰和NOx排放数据用于建立源DL模型，而测试4、5和8的数据用于训练、验证和测试ODL模型。每个数据集被随机分为训练数据集(75%)、验证数据集(12.5%)和测试数据集(12.5%)。并用MAPE(平均绝对百分比误差)、σ(绝对百分比误差标准差)和APEmax(最大绝对百分比误差)来评估模型的性能。
 ** 结论
 测试结果表明，所提出的ODL模型能够预测“可见”和“不可见”情况下的NOx排放，即使在三次更新后，平均绝对百分比误差也不超过3%。与传统的CNN模型相比，ODL模型具有增量学习能力，这使得所提出的ODL模型在实际燃烧系统变工况下的NOx在线预测中具有很大的潜力，提高了精度和效率。
+*  Monitoring combustion instabilities of stratified swirl flames by feature extractions of time-averaged flame images using deep learning method[J].
+[[cite:&Zhou-et.al._2020]]
+** 问题
+由于火焰化学发光提供了对热释放分布的最直接的了解,火焰的不稳定性与火焰的形状密切相关，这为通过图像进行火焰监测提供了支持。到目前为止的监测系统无法在燃烧不稳定发生之前检测到不稳定的警告信号。这是因为以前的研究依赖于不稳定火焰图像的特性来确定其稳定性，但这些特性可能要到火焰变得不稳定时才会显现出来。
+** 方法
+本文利用800 mm火焰管的BASE(北航轴向旋流独立分层)燃烧器的时均火焰图像，将CNN应用于分层旋流火焰的监测，使用具有104个操作条件的数据集来训练具有高分类精度的称为BIM的特定CNN模型，并使用类激活法(CAM)可视化火焰特征。实验采用的燃烧器称为基式燃烧器，这是一种具有LPP(稀薄预混合预汽化)燃烧器典型特征的模型燃烧器，燃料是完全预混的甲烷和空气，这是由两个旋流器上游的预混装置实现的。采用增强型高速摄像机采集动态火焰图像，采样频率为5000 Hz，采样分辨率为768×768。为了获得时间平均的火焰图像，对每十个连续的快照进行平均，持续时间为2ms。压力信号被用来定义火焰的稳定性，频谱中压力峰值高于300pa的运行条件被定义为不稳定。根据先导比和主要当量比（范围分别为0-1.4和0-1），有112种不同的运行条件：其中28种是不稳定的，84种是稳定的。在每个操作条件下，拍摄50幅时间平均的图像，并从768×768的分辨率降级到224×224，以减少CNN训练过程中的计算量。选择了8种不属于训练组的运行条件进行最终验证，将剩余的104个运行条件(104×50=5200个图像)随机混洗，分为三个子集，即训练集、验证集和测试集，分别有4000、1000和200个图像。训练集用于调整CNN模型的参数，验证集用于在训练时间内评估模型的质量。通过测试集对CNN的最终性能进行了评估。
+** 讨论
+1. BIM获得了99%左右的总体监测精度，证明了该方法能够有效监测双稳区域以外的燃烧不稳定。在8种未知工况下对BIM的泛化能力进行了测试，得到了理想的结果。
+2. 采用CAM方法提取火焰特征，验证了该方法提取火焰图像背后统计数据模式的能力。
+3. CAM的分布表明，BIM捕捉到了火焰与壁面的相互作用、附着性火焰、OSL火焰和混合效应。
+** 结论
+本研究通过对这些火焰特征的检测，可以准确地监测BASIS的燃烧状态，这些特征的特性与之前的实验研究中发现的机制相对应。但该方法并不能够有效监测双稳区域的燃烧稳定性，还需要引入更多的实验数据和更好的损耗函数，以提高双稳态条件下的BIM性能。
+* 参考文献                                                           :ignore:
+bibliographystyle:unsrt
+bibliography:./papers.bib
+
+
